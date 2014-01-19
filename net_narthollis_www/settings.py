@@ -30,13 +30,29 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
+    'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.contenttypes',
+    'django.contrib.comments',
+
+    'south',
+
+    'zinnia_theme_netnarthollis',
+
+    'zinnia_html5',
+    # For Zinnia
+    'tagging',
+    'mptt',
+    'zinnia',
+
+    #'debug_toolbar',
 )
+
+SITE_ID=1
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -51,23 +67,27 @@ ROOT_URLCONF = 'net_narthollis_www.urls'
 
 WSGI_APPLICATION = 'net_narthollis_www.wsgi.application'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.request',
+    'django.core.context_processors.media',
+    'zinnia.context_processors.version', # Optional
+)
 
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
+TEMPLATE_LOADERS = (
+    'app_namespace.Loader',
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+
+    'django.template.loaders.eggs.Loader'
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'en-au'
 
 USE_I18N = True
 
@@ -75,8 +95,16 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ZINNIA_WYSIWYG=False
+ZINNIA_MARKUP_LANGUAGE = 'markdown'
+ZINNIA_MARKDOWN_EXTENSIONS = 'extra,admonition'
+
+from .local_settings import *
+MANAGERS = ADMINS
+TEMPLATE_DEBUG = DEBUG
+

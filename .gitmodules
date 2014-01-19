@@ -1,0 +1,3 @@
+[submodule "zinnia_theme_netnarthollis/static/bootstrap"]
+	path = zinnia_theme_netnarthollis/static/bootstrap
+	url = https://github.com/twbs/bootstrap.git
