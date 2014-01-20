@@ -1,6 +1,6 @@
 django
 django-app-namespace-template-loader
-git://github.com/Fantomas42/django-blog-zinnia.git#egg=django-blog-zinnia
+git+https://github.com/Fantomas42/django-blog-zinnia.git#egg=django-blog-zinnia
 south
 pyparsing
 django-xmlrpc
