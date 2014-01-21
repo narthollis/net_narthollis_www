@@ -1,0 +1,11 @@
+django
+django-app-namespace-template-loader
+git+https://github.com/Fantomas42/django-blog-zinnia.git#egg=django-blog-zinnia
+south
+pyparsing
+django-xmlrpc
+Pillow
+zinnia-theme-html5
+markdown
+pygments
+
