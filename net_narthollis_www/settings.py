@@ -102,7 +102,10 @@ STATIC_URL = '/static/'
 
 ZINNIA_WYSIWYG=False
 ZINNIA_MARKUP_LANGUAGE = 'markdown'
-ZINNIA_MARKDOWN_EXTENSIONS = 'extra,admonition'
+ZINNIA_MARKDOWN_EXTENSIONS = 'extra,admonition,codehilite'
+
+from zinnia.xmlrpc import ZINNIA_XMLRPC_METHODS
+XMLRPC_METHODS = ZINNIA_XMLRPC_METHODS
 
 from .local_settings import *
 MANAGERS = ADMINS
