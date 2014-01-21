@@ -466,6 +466,9 @@ class Tag(models.Model):
         verbose_name = _('tag')
         verbose_name_plural = _('tags')
 
+    def __str__(self):
+        return self.__unicode__()
+
     def __unicode__(self):
         return self.name
 
@@ -486,5 +489,9 @@ class TaggedItem(models.Model):
         verbose_name = _('tagged item')
         verbose_name_plural = _('tagged items')
 
+    def __str__(self):
+        return self.__unicode__()
+
     def __unicode__(self):
         return '%s [%s]' % (self.object, self.tag)
+
