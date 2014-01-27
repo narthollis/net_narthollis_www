@@ -49,6 +49,8 @@ INSTALLED_APPS = (
     'mptt',
     'zinnia',
 
+    'django_xmlrpc',
+
     #'debug_toolbar',
 )
 
