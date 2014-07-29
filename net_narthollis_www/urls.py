@@ -17,7 +17,7 @@ urlpatterns = patterns('',
 
     url(r'^pygments/style.css', 'zinnia_theme_netnarthollis.views.get_pygments_css', name="pygments_css"),
 
-    url(r'^xmlrpc/$', 'django_xmlrpc.views.handle_xmlrpc'),
+    #url(r'^xmlrpc/$', 'django_xmlrpc.views.handle_xmlrpc'),
 
     url(r'^admin/', include(admin.site.urls)),
 )

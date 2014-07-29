@@ -1,5 +1,5 @@
 {% extends "zinnia_html5:zinnia/_entry_detail_base.html" %}
-{% load comments i18n zinnia_tags %}
+{% load i18n zinnia_tags %}
 
   {% block entry-comments %}
   <a href="{{ object.get_absolute_url }}#disqus_thread" data-disqus-identifier="{{ object.pk }}"

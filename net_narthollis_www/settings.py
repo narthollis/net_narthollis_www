@@ -20,9 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'vr(%avajk!11h)+k6l!*)gk6&lvq7g&j#&c-)va+&82a5ab8n_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.contenttypes',
-    'django.contrib.comments',
+    #'django.contrib.comments',
 
     'south',
 
@@ -49,7 +49,7 @@ INSTALLED_APPS = (
     'mptt',
     'zinnia',
 
-    'django_xmlrpc',
+    #'django_xmlrpc',
 
     #'debug_toolbar',
 )
@@ -106,8 +106,12 @@ ZINNIA_WYSIWYG=False
 ZINNIA_MARKUP_LANGUAGE = 'markdown'
 ZINNIA_MARKDOWN_EXTENSIONS = 'extra,admonition,codehilite'
 
-from zinnia.xmlrpc import ZINNIA_XMLRPC_METHODS
-XMLRPC_METHODS = ZINNIA_XMLRPC_METHODS
+ZINNIA_AUTO_CLOSE_COMMENTS_AFTER = 0
+ZINNIA_AUTO_CLOSE_PINGBACKS_AFTER = 0
+ZINNIA_AUTO_CLOSE_TRACKBACKS_AFTER = 0
+
+#from zinnia.xmlrpc import ZINNIA_XMLRPC_METHODS
+#XMLRPC_METHODS = ZINNIA_XMLRPC_METHODS
 
 from .local_settings import *
 MANAGERS = ADMINS
