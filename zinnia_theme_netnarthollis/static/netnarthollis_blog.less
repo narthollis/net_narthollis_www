@@ -41,8 +41,10 @@ body.entry-list {
     p.entry-last-update {
       display: none;
     }
-
-    header { border-bottom: 0; }
+    header {
+        border-bottom: 0;
+        p { padding: 0; }
+    }
 
     footer {
       font-size: 90%;
@@ -52,7 +54,7 @@ body.entry-list {
   }
 }
 
-article.hentry header {
+article header {
     p { padding: 0 1em; margin-top: -0.9em; }
     p:last-child { margin-bottom: 0; }
 
