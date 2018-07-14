@@ -1,1 +1,0 @@
-Bind DLZ and Postgres - Part 2
