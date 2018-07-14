@@ -1,0 +1,1 @@
+~~~~.javascript global shelf; let p = shelf["ports"].pop(); let c = shelf["cups"]["port"].pop(); c.append(p.extract(30)); while (c.notEmpty()) { self.sip(c); while (1) { if (self.tasteDiminished()) break; } } ~~~~

@@ -34,7 +34,13 @@
         </nav>
         <main role="main" class="container">
             <h1>{{.Doc.title}}</h1>
-            {{.Doc.body}}
+
+            {{range $k,$v := .Context.Files "articles"}}
+                {{$k}} -- {{$v}}
+            {{end}}
+            <article>
+                
+            </article>
         </main>
         <footer class="footer">
           <div class="container">

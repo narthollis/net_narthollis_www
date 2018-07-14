@@ -1,4 +1,5 @@
 ---
+template: index-template.html
 title: Net Narthollis - Home
 sitename: Net Narthollis
 ---
