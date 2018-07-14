@@ -1,1 +1,0 @@
-[http://www.tickld.com/x/next-time-someone-says-women-arent-victims-of-harassment-show-them](http://www.tickld.com/x/next-time-someone-says-women-arent-victims-of-harassment-show-them)
