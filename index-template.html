@@ -36,8 +36,8 @@
             <h1>{{.Doc.title}}</h1>
             <nav>
                 <ul>
-                {{range $k,$v := .Context.Files "articles"}}
-                    <li><a href="/articles/{{ $v }}/">{{ $.Include (printf "articles/%s/link.md" $v) }}</a></li>
+                {{range $v := .Context.Files "articles"}}
+                    <li><a href="/articles/{{ $v }}/">{{html $.Include (printf "articles/%s/link.md" $v) }}</a></li>
                 {{end}}
                 </ul>
             </nav>
