@@ -34,12 +34,15 @@
         </nav>
         <main role="main" class="container">
             <h1>{{.Doc.title}}</h1>
-            <article>
-                <dl class="dl-horizontal">
+            <nav>
+                <ul>
                 {{range $k,$v := .Context.Files "articles"}}
-                    <dt>{{$k}}</dt><dd>{{$v}}</dd></dl>
+                    <li><a href="/articles/{{ $v }}/">{{ .Include "articles/$v/link.md" }}</a></li>
                 {{end}}
-                </dl>
+                </ul>
+            </nav>
+            <article>
+
             </article>
         </main>
         <footer class="footer">
