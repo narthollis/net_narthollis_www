@@ -35,9 +35,13 @@
         <main role="main" class="container">
             <h1>{{.Doc.title}}</h1>
 
+            {{ .Context.Files "articles" }}
+
+            {{/*
             {{range $k,$v := .Context.Files "articles"}}
                 {{$k}} -- {{$v}}
             {{end}}
+            */}}
             <article>
                 
             </article>
