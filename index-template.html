@@ -37,7 +37,7 @@
             <nav>
                 <ul>
                 {{range $v := .Context.Files "articles"}}
-                    <li><a href="/articles/{{ $v }}/">{{html $.Include (printf "articles/%s/link.md" $v) }}</a></li>
+                    <li><a href="/articles/{{ $v }}/">{{ $.Markdown (printf "articles/%s/link.md" $v) }}</a></li>
                 {{end}}
                 </ul>
             </nav>
