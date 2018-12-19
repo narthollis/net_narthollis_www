@@ -1,1 +1,1 @@
-Internet Explorer <8 and <select>
+Internet Explorer &lt;8 and &lt;select&gt;
