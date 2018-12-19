@@ -36,9 +36,8 @@
             <h1>{{.Doc.title}}</h1>
             <nav>
                 <ul>
-                {{ $Include := .Include }}
                 {{range $k,$v := .Context.Files "articles"}}
-                    <li><a href="/articles/{{ $v }}/">{{ $Include "articles/$v/link.md" }}</a></li>
+                    <li><a href="/articles/{{ $v }}/">{{ $.Include "articles/$v/link.md" }}</a></li>
                 {{end}}
                 </ul>
             </nav>
