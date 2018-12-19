@@ -1,0 +1,1 @@
+Apache basic Authentication with LDAP

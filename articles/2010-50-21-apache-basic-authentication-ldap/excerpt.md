@@ -1,0 +1,1 @@
+A friend asked me to share my apache LDAP authentication configuration, so I decided that if one person could use it, then so could more; so here is a snippet of my config.
