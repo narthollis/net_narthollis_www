@@ -7,7 +7,7 @@ I have recently encountered a number of issues relating to populating &lt;select
 If you clicked on them, or tabbed to them; then they would highlight, but nothing else.
 ([example][1])
 
-The issue it turns out is caused by the way that Internet Explorer &lt;8 handles &lt;select&gt; lists. More to the point the way that it treats them as special elements, not standard HTML elements. I was simply appending the <option> elements to the &lt;select&gt; as DOM child nodes. While this works correctly in every other web browser I tested (Chrome 4>, FF 3.5>, IE8) it doesn't work in IE7, which was a requirement for the project. It turns out that in Internet Explorer if you want to add more options to a &lt;select&gt; element you need to create new Option objects and append them to the &lt;select&gt;.objects 'array' (I say 'array' as its not really an array... but it behalves enough like one).
+The issue it turns out is caused by the way that Internet Explorer &lt;8 handles &lt;select&gt; lists. More to the point the way that it treats them as special elements, not standard HTML elements. I was simply appending the &lt;option&gt; elements to the &lt;select&gt; as DOM child nodes. While this works correctly in every other web browser I tested (Chrome 4>, FF 3.5>, IE8) it doesn't work in IE7, which was a requirement for the project. It turns out that in Internet Explorer if you want to add more options to a &lt;select&gt; element you need to create new Option objects and append them to the &lt;select&gt;.objects 'array' (I say 'array' as its not really an array... but it behalves enough like one).
 
 (Note, I am using [Prototype][2] language extensions in the below example)
 ~~~~.javascript
