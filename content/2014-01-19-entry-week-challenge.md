@@ -10,6 +10,8 @@ mathjax = "tex-mml"
 
 So, ever since I first got into coding, and probably even before, I have had some form of website. This website has almost always featured some from of blog component. The blog component started out as being there because it was just The Done Thing (tm) for personal websites. Over the years I have posted various things to my various blogs - ranging from treating it a like a diary during my teenage years (I think i have successfully purged these from the internet) thought to more recently treating it as a public note board - a place I can post things I don't use often but will probably need later.
 
+<!-- more -->
+
 The only unifying fact about most of my blogs over the years is the infrequency of the posts to them. I often start out with good intentions - I will post some form of content on something resembling a regular basis. Skip to now, and we can see that the most recent post before this one was almost 2 years ago.
 
 My outlook on life has changed somewhat in those past years - and one thing that I have been thinking more and more recently is that I am just not writing at all any more. That is not to say I am not coding - no I have quite a few interesting projects in the works. Nor does it mean that I have given up text communication in general, I probably put more words every day into various chat programs than go into the various text editors I use.

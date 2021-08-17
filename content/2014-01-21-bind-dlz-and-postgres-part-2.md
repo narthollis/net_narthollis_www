@@ -12,6 +12,8 @@ Recently, thanks to my once again playing [EVE Online][eve], I have had the oppo
 
 One thing that came up recently (when I commented that my DNS server had fallen over) was that SQL backed DNS was stupid... except when there was some requirement for it to be updated by non-technical users. Now, given that is a large part of the reason I moved to using SQL backed DNS in the first place, I enquired about how to get around the various issues when using SQL backed DNS.
 
+<!-- more -->
+
 As it turns out, the way to get around most of the deficiencies is to simply not publish the real master server, and only publish slave servers.
 
 Now, I really liked this idea, as I very quickly assessed that this could let me get rid of another 2 servers if I could find some other service to hos my slave DNS servers.

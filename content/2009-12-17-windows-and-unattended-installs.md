@@ -19,7 +19,7 @@ The depths of the Deployment toolkit are still a bit of a mystery to me, however
 So far I have managed to get Windows 7 x86 and Windows 7 x86_64 installing form USB media, with Windows XP Professional also on the USB media but not yet installing correctly. To get Windows 7 working simply follow the cluberti.com howto. As for Windows XP, this was as simple as inserting the CD and pointing MDT at that instead of a Windows 7 installer. Getting it working has been another thing entirely.
 
 I have also managed to get a number of application installing automaticly - which is highly useful. I have done this with a combination of command line arguments and batch scripts (the batch scripts are mostly used for customising the default install, or ensuring the existence of icons on the desktop.) Eg.
-```batch
+```bat
 @echo off
 set ProgRoot=%ProgramFiles%
 if not "%ProgramFiles(x86)%" == "" set ProgRoot=%ProgramFiles(x86)%

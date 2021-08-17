@@ -9,8 +9,10 @@ mathjax = "tex-mml"
 +++
 
 A friend asked me to share my apache LDAP authentication configuration, so I decided that if one person could use it, then so could more; so here is a snippet of my config.
+
 <!-- more -->
-~~~~{.plain}
+
+```txt
   <Location />
     AuthBasicProvider ldap
     AuthzLDAPAuthoritative on
@@ -22,7 +24,7 @@ A friend asked me to share my apache LDAP authentication configuration, so I dec
     AuthType Basic
     AuthName "NET NARTHOLLIS Server Admin Tools"
   </Location>
-~~~~
+```
 
 If you have access to the apache config this this should be put there, other wise this can be put in your .htaccess file. In that case you should remove the <Location> tags.
 

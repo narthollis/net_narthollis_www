@@ -12,6 +12,8 @@ So its been a while since I wrote there - I managed my 1 entry a week challenge 
 
 I really want to say that I am going to pick up this blogging thing again, but that just isn't something that i can promise. I will try however.
 
+<!-- more -->
+
 This post mostly comes from a desire to just type something out. I have yet to just type a solid amount of text after getting my new keyboard. I suppose that means I could just use this post to write a review of the keyboard. Well, that would not quite work either as I would much prefer for review to be an item of its own. I feel that a review piece should be something that can be read without having to navigate the type of dribble that these "addressing the audience" pieces are.
 
 Oh, the keyboard in question is a [WASD Keyboards CODE Clear][wasd-code].

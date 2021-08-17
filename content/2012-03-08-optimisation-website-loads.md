@@ -12,6 +12,8 @@ So Today I was linked to an article about optimising your you web server by upda
 
 So this lead me to wander about some simpler optimisations, something any web developer can realistically do when they deploy an application, and just how much of an effect these opermisations have on a website.
 
+<!-- more -->
+
 ## Method ##
 So the first thing I looked at was the load times for a JavaScript heavy project I am currently working on, TimTam.
 

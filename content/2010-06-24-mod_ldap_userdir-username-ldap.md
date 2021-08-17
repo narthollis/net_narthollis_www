@@ -18,14 +18,14 @@ mod_ldap_userdir is an apache module that reads the users from an LDAP directory
 
 There are two key points to making sure it works, the first is ensuring you have all of the LDAP options configured correctly eg.
 
-```apache
+```
 LDAPUserDirServerURL    ldap://auth.domain.tld/ou%3DPeople%2Cdc%3domain%2Cdc%3Dtld??sub?(&(uid=%25u)(objectClass=posixAccount))
 LDAPUserDir             public_html
 ```
 
 or the more readable style (that I didn't get working, YMMV)
 
-```apache
+```
 LDAPUserDirServer    auth.domain.tld
 LDAPUserDirBaseDN    "ou=People,dc=domain,dc=tld"
 LDAPUserDirFilter    "(&(uid=%u)(objectClass=posixAccount))"
@@ -34,7 +34,7 @@ LDAPUserDir          public_html
 
 The other key point is to ensure that the ~public_html folders have the correct apache permissions. This is the big place I stuffed up, as mod_ldap_userdir dosn't work if mod_userdir is loaded, and all of the folder permissions are stored in the mod_userdir config (in gentoo at lease).
 
-```apache
+```
 # Control access to UserDir directories.  The following is an example
 # for a site where these directories are restricted to read-only.
 <Directory /home/*/public_html>

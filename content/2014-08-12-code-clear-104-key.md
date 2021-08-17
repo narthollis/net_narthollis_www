@@ -10,6 +10,8 @@ mathjax = "tex-mml"
 
 Many many moons ago, I was a fan of the light touch of a scissor switch mechanism keyboard. In many ways I still am a fan of this style of keyboard. I like the short quick stroke, and limited push back. Well... I though I really liked this anyway, to the point where I would often get into arguments with friends and colleges about why I thought mechanical keyboards a thing of the past.
 
+<!-- more -->
+
 Sometime early last year I used a friends [Das Keyboard][das-keyboard]. I really only used it for a few minutes, but it was enough for me to begin to appreciate the feel of the keystroke. This was my first real introduction to the world of the [Cherry MX Switches][cherry-mx-switch].
 
 I was not able to break away from the scissor switch quite so easily however. There was still the problem that I did't quite like the very loud clicky sound that most mechanical keyboards are famous for. Nor was I willing to give up the features that modern keyboards have that most mechanical ones were lacking - namely media keys.

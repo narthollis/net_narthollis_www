@@ -9,6 +9,8 @@ mathjax = "tex-mml"
 +++
 I am often amused and frustrated at how people get the 3 general types of intellectual property mixed up. The most commonly confused are Copyright and Trademarks. Though I do often see people confusing Copyright and Patents as well.
 
+<!-- more -->
+
 So without further ado, here is a brief overview of the 3 types of intellectual property, starting with the most common; Copyright.
 
 #### Copyright ####
