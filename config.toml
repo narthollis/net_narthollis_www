@@ -30,7 +30,7 @@ last_page = "Last Page"
 
 [extra]
 [extra.show]
-tags = true
+tags = false
 # Put all your custom variables here
 [extra.social]
 github = "narthollis"
