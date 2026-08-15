@@ -1,5 +1,5 @@
 +++
-title = "Net Narthollis"
+title = "Latest Articles"
 
 [extra]
 header = { title = "Hi, I'm narthollis! 👋", img = "img/avatar.webp", img_alt = "narthollis" }
