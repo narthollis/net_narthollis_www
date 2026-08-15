@@ -1,5 +1,5 @@
 +++
-title = "Internet Explorer <8 and <select>"
+title = "Internet Explorer <8 and &lt;select&gt;"
 template = "page.html"
 date = 2010-08-23T03:34:00Z
 [taxonomies]

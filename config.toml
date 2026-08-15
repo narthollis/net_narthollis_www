@@ -2,22 +2,32 @@ title = "Net Narthollis"
 description = "blog of narthollis"
 base_url = "/" #"https://narthollis.net"
 
-theme = "anatole-zola"
+default_language = "en"
 
-# Whether to automatically compile all Sass files in the sass directory
+theme = "tabi"
+
 compile_sass = true
 
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
 taxonomies = [
   {name = "tags"},
 ]
 
+[search]
+index_format = "elasticlunr_json" # Or the less efficient "elasticlunr_javascript".
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
+bottom_footnotes = true
+external_links_class = "external"
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+style = "class"
 
 [translations]
 about = "About"
@@ -29,9 +39,36 @@ next_page = "Next Page"
 last_page = "Last Page"
 
 [extra]
-[extra.show]
-tags = false
-# Put all your custom variables here
-[extra.social]
-github = "narthollis"
+skin = "lavender"
+favicon_emoji = "👾"
 
+base_canonical_url = "https://narthollis.net/"
+
+compact_tags = true
+copy_button = true
+
+katex = true
+mermaid = true
+
+remote_repository_url = "https://github.com/narthollis/net_narthollis_www"
+remote_repository_git_platform = "auto"
+remote_repository_branch = "main"
+show_remote_changes = true
+show_remote_source = true
+
+menu = [
+    { name = "projects", url = "projects", trailing_slash = true },
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "archive", url = "archive", trailing_slash = true },
+    #{ name = "tags", url = "tags", trailing_slash = true },
+    #{ name = "about", url = "about", trailing_slash = true },
+    { name = "github", icon = "github", url = "https://github.com/narthollis", trailing_slash = false },
+]
+
+socials = [
+#    { name = "github", url = "https://github.com/narthollis/", icon = "github" },
+#    { name = "soundcloud", url = "https://soundcloud.com/oskerwyld", icon = "soundcloud" },
+#    { name = "instagram", url = "https://instagram.com/oskerwyld", icon = "instagram" },
+#    { name = "youtube", url = "https://youtube.com/@oskerwyld", icon = "youtube" },
+#    { name = "spotify", url = "https://open.spotify.com/artist/5Hv2bYBhMp1lUHFri06xkE", icon = "spotify" },
+]
