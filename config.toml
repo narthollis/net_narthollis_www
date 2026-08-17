@@ -1,6 +1,6 @@
 title = "Net Narthollis"
 description = "blog of narthollis"
-base_url = "/" #"https://narthollis.net"
+base_url = "https://narthollis.net"
 
 default_language = "en"
 
